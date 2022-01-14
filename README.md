@@ -37,6 +37,11 @@ lab $ python lab/app.py
 lab $ ls ~/debug # here are all the libs you may want to modify for your tests
 ```
 
+Stop your lab:
+```sh
+./stop oslo.cache/memcache_pool_backend
+```
+
 ## Labs
 
 ## Overview
@@ -48,3 +53,10 @@ oslo's users are commonly openstack services like nova, neutron, etc...
 
 A lab provide some scripts to give you an abstraction and emulate openstack
 services.
+
+All the libs that you want to debug, example dogpile.cache, oslo.cache,
+pymemcache are all stored as git repositories in `~/debug`. All these git
+repositories have openstack gerrit remote and github remote (origin).
+
+Your payload are stored in `lab/` and you can configure your caching by
+editing `lab/app.conf`.
