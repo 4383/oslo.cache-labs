@@ -41,7 +41,6 @@ services:
 
   memcached1:
     image: memcached
-    container-name: memcached1
     hostname: memcached1
     container_name: memcached1
     networks:
@@ -49,7 +48,6 @@ services:
 
   memcached2:
     image: memcached
-    container-name: memcached2
     hostname: memcached2
     container_name: memcached2
     networks:
