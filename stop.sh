@@ -16,7 +16,7 @@ if [ -z $1 ]; then
     exit 1
 fi
 
-LAB=labs/oslo.cache/$1
+LAB=labs/$1
 if [ ! -f "${LAB}/docker-compose-lab.yml" ]; then
     echo "Wrong lab name ${LAB}... lab not found"
     echo "List of labs: ${labs_array[@]}"
